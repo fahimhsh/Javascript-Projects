@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <p>Enter Your Text or URL</p>
+        <input type="text" placeholder="Text or URL" id="qrText">
+
+        <div id="qrArea">
+            <img src="" id="qrImg">
+        </div>
+
+        <button id="generate" onclick="createQr()">Generate QR Code</button>
+        <button id="copy" onclick="downAndRemoveQr()">Copy QR Code</button>
+    </div>
+
+    <script>
+        let qrText = document.getElementById("qrText")
+        let qrArea = document.getElementById("qrArea")
+        let qrImg = document.getElementById("qrImg")
+        let generate = document.getElementById("generate")
+        let copy = document.getElementById("copy")
+        let imgUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=` 
+
+        let qrImg2 = imgUrl + qrText.value
+
+        function createQr() {
+            qrArea.style.display = 'block'
+
+            qrImg.src = imgUrl + qrText.value
+            generate.style.display = "none"
+            copy.style.display = 'block'
+            console.log(qrImg)
+        }
+        async function downAndRemoveQr(qrImg2) {
+            const image = await fetch(qrImg2)
+            const imageBlog = await image.blob()
+            const imageURL = URL.createObjectURL(imageBlog)
+
+            const link = document.createElement('a')
+            link.href = imageURL
+            link.download = 'image file name here'
+            document.body.appendChild(link)
+            link.click()
+            document.body.removeChild(link)
+            
+            generate.style.display = 'block'
+            copy.style.display = 'none'
+
+            alert('QR Code Downloaded')
+
+            qrArea.style.display = 'none'
+        }
+    </script>
+
+</body>
+</html>

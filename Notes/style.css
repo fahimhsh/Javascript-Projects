@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #333;
+}
+.container{
+    width: 40%;
+    max-width: 650px;
+    margin: 100px auto 20px;
+    background: linear-gradient(135deg, #cf9aff, #95c0ff);
+    padding: 40px;
+    border-radius: 40px;
+}
+.container h1{
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+.container h1 img{
+    width: 60px;
+}
+.container button{
+    background: linear-gradient(#9812d6, #aa23d3);
+    border: 0;
+    outline: 0;
+    padding: 15px 25px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    cursor: pointer;
+}
+.container button img{
+    width: 30px;
+}
+.title_and_date_input{
+    overflow: hidden;
+    display: none;
+}
+.title_and_date_input input{
+    border: 0;
+    outline: 0;
+    width: 49%;
+    height: 50px;
+    padding: 0 15px;
+    font-size: 16px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.title_and_date_input button{
+    width: 20%;
+    display: block;
+    border-radius: 16px;
+    font-size: 15px;
+    padding: 5px;
+    height: 47px;
+    float: right;
+    margin-right: 5px;
+}
+.notes_container{
+    width: 100%;
+    background: #fff;
+    min-height: 120px;
+    border-radius: 20px;
+    padding: 20px;
+    display: block;
+}
+.notes_container:empty{
+    width: 0px;
+    background: #fff;
+    min-height: 0px;
+    border-radius: none;
+    padding: 0px;
+}
+#myDiv{
+    display: none;
+}
+.notes_container button{
+    background: #fff;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+}
+.title_output{
+    font-size: 22px;
+}
+.date_output{
+    font-size: 16px;
+    color: #333;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.input_box{
+    font-size: 17px;
+    background: #e6e6e6;
+    min-height: 50px;
+    border-radius: 5px;
+    padding: 5px;
+}
