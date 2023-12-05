@@ -14,11 +14,17 @@
         <div class="title_and_date_input">
             <input type="text" id="title_input" placeholder="Title">
             <input type="text" id="date_input" placeholder="Date">
-            <button onclick="createNotesContainer()">Next</button>
+            <textarea id="note_input" cols="3" rows="7" placeholder="Write Your Note Here"></textarea>
+            <button onclick="createNotesContainer()">Add Note</button>
             <button onclick="cancel()">Cancel</button>
         </div>
-        <div class="notes_container""></div>
-    </div>
+        <div class="notes_container"">
+            <!-- <h1> <span class="title_output"> ${titleInput.value} </span> <span class="date_output">${dateInput.value}</span> </h1>
+            <p class="input_box" id="edit_text" >${noteInput.value}</p>
+            <button onclick="deleteNote(this)"><img src="img/delete.png"></button>
+            <button id="edit_btn" onclick="editText()">Edit</button>
+            <button id="save_btn" onclick="saveText()">Save</button> -->
+        </div>
 
     <script src="script.js">
         
