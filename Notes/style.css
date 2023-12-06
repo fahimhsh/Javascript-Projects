@@ -135,4 +135,38 @@ body{
     .container{
     width: 100%;
     }
+    
+    .container h1{
+        display: flex;
+        align-items: center;
+        font-size: 35px;
+        font-weight: 600;
+    }
+    .container h1 img{
+        width: 40px;
+    }
+    .container h1 img , .container h1 {
+        margin-left: 12%;
+    }
+    .container button{
+        padding: 7.5px 12.5px;
+        border-radius: 25px;
+        font-size: 15px;
+        gap: 5px;
+    }
+    .container button img{
+        width: 20px;
+    }
+    .title_and_date_input input{
+        width: 100%;
+    }
+    .title_and_date_input button{
+        width: 30%;
+        display: block;
+        border-radius: 16px;
+        font-size: 13px;
+        height: 47px;
+        float: right;
+        margin-right: 5px;
+    }
 }
