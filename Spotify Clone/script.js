@@ -18,13 +18,13 @@ Array.from(document.getElementsByClassName('song_item')).forEach((element, i)=>{
 let pausePlayIcon = document.getElementById('masterPlay')
 
 function playPause() {
-    if (pausePlayIcon.classList.contains("fa-pause")) {
+    if (pausePlayIcon.classList.contains("bi-pause-fill")) {
         music.pause();
-        pausePlayIcon.classList.remove("fa-pause");
-        pausePlayIcon.classList.add("fa-play");
+        pausePlayIcon.classList.remove("bi-pause-fill");
+        pausePlayIcon.classList.add("bi-play-fill");
     } else {
         music.play();
-        pausePlayIcon.classList.remove("fa-play");
-        pausePlayIcon.classList.add("fa-pause");
+        pausePlayIcon.classList.remove("bi-play-fill");
+        pausePlayIcon.classList.add("bi-pause-fill");
     }
 }
