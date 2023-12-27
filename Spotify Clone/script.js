@@ -16,7 +16,7 @@ Array.from(document.getElementsByClassName('song_item')).forEach((element, i)=>{
 });
 
 const pausePlayIcon = document.getElementById('masterPlay');
-console.log(pausePlayIcon)
+console.log("My Error:", pausePlayIcon);
 
 function playPause() {
     if (pausePlayIcon.classList.contains("bi-pause-fill")) {
