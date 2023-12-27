@@ -15,7 +15,8 @@ Array.from(document.getElementsByClassName('song_item')).forEach((element, i)=>{
     element.getElementsByTagName('h5')[0].innerHTML = songs[i].songName;
 });
 
-let pausePlayIcon = document.getElementById('masterPlay')
+const pausePlayIcon = document.getElementById('masterPlay');
+console.log(pausePlayIcon)
 
 function playPause() {
     if (pausePlayIcon.classList.contains("bi-pause-fill")) {
