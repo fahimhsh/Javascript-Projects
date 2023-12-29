@@ -8,7 +8,7 @@ const songs = [
         id: '1',
         songName: `Koshtooo <br>
         <div class="artist_name">Shahriar Fahim</div>`,
-        poster: '/img/1.jpg',
+        poster: 'img/1.jpg',
     },
 ];
 const popularSongs = [
@@ -16,7 +16,7 @@ const popularSongs = [
         id: '1',
         songName: `Koshtooo <br>
         <div class="artist_name">Shahriar Fahim</div>`,
-        poster: '/img/1.jpg',
+        poster: 'img/1.jpg',
     },
 ];
 const popularArtist = ['img/1.jpg',]
