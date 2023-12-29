@@ -1,4 +1,4 @@
-var music = new Audio("./audio/1.mp3");
+var music = new Audio("audio/1.mp3");
 // Store Musics in Array
 
 
@@ -9,7 +9,6 @@ const songs = [
         songName: `Koshtooo <br>
         <div class="artist_name">Shahriar Fahim</div>`,
         poster: '/img/1.jpg',
-        songUrl: './1.mp3'
     },
 ];
 const popularSongs = [
@@ -18,10 +17,9 @@ const popularSongs = [
         songName: `Koshtooo <br>
         <div class="artist_name">Shahriar Fahim</div>`,
         poster: '/img/1.jpg',
-        songUrl: './1.mp3'
     },
 ];
-const popularArtist = ['./img/1.jpg',]
+const popularArtist = ['img/1.jpg',]
 /* This Part of Code contains images, names and url of songs and Artist */
 
 
@@ -71,7 +69,7 @@ Array.from(document.getElementsByClassName('song_item_artist')).forEach((element
     if (popularArtist[i]) {
         artistPic = popularArtist[i];
     } else {
-        artistPic = './img/bg.jpg';
+        artistPic = 'img/bg.jpg';
     }
 
     element.getElementsByTagName('img')[0].src = artistPic;
